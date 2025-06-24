@@ -1,0 +1,15 @@
+{
+    "id": "{C631C6D4-9B7C-CD0C-76BD-0BF55D608947}",
+    "name": "Muellkalender",
+    "type": 3,
+    "vendor": "",
+    "aliases":
+    [
+
+    ],
+    "url": "https://www.giwuwu.de",
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "ABC"
+}
