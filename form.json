@@ -1,0 +1,164 @@
+{
+  "elements":
+  [
+
+    { "type": "Label", "label": "####### Müllabfuhr v1.1 (31.12.2017 14.00 Uhr) by Bayaro - www.bayaro.net #######" },
+	{ "type": "Label", "label": "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" },
+    { "type": "Label", "label": "Hier bitte alle Felder ausfüllen die ihr verwenden möchtet. Die anderen Felder einfach leer lassen." },
+	{ "type": "Label", "label": "Leere Felder werden nicht ausgewertet und dementsprechend auch keine Variablen angelegt. Man kann" },
+	{ "type": "Label", "label": "also selbst entscheiden wie viele und welche Müllarten man aufnehmen möchte." },
+	{ "type": "Label", "label": "Termine müssen in diesem Format eingetragen werden:  01.01.2016|10.01.2016|23.01.2016|..." },
+	{ "type": "ValidationTextBox", "name": "Muell1Name", "caption": "Name Müll1" },
+	{ "type": "ValidationTextBox", "name": "Muell1Art", "caption": "Art Müll1" },
+	{ "type": "ValidationTextBox", "name": "Muell1Termine", "caption": "Termine Müll1" },
+	{ "type": "CheckBox", "name": "Muell1Benachrichtigung", "caption": "Benachrichtigung für Müll1 aktiv" },
+	{ "type": "ValidationTextBox", "name": "Muell2Name", "caption": "Name Müll2" },
+	{ "type": "ValidationTextBox", "name": "Muell2Art", "caption": "Art Müll2" },
+	{ "type": "ValidationTextBox", "name": "Muell2Termine", "caption": "Termine Müll2" },
+	{ "type": "CheckBox", "name": "Muell2Benachrichtigung", "caption": "Benachrichtigung für Müll2 aktiv" },
+	{ "type": "ValidationTextBox", "name": "Muell3Name", "caption": "Name Müll3" },
+	{ "type": "ValidationTextBox", "name": "Muell3Art", "caption": "Art Müll3" },
+	{ "type": "ValidationTextBox", "name": "Muell3Termine", "caption": "Termine Müll3" },
+	{ "type": "CheckBox", "name": "Muell3Benachrichtigung", "caption": "Benachrichtigung für Müll3 aktiv" },
+	{ "type": "ValidationTextBox", "name": "Muell4Name", "caption": "Name Müll4" },
+	{ "type": "ValidationTextBox", "name": "Muell4Art", "caption": "Art Müll4" },
+	{ "type": "ValidationTextBox", "name": "Muell4Termine", "caption": "Termine Müll4" },
+	{ "type": "CheckBox", "name": "Muell4Benachrichtigung", "caption": "Benachrichtigung für Müll4 aktiv" },
+	{ "type": "ValidationTextBox", "name": "Muell5Name", "caption": "Name Müll5" },
+	{ "type": "ValidationTextBox", "name": "Muell5Art", "caption": "Art Müll5" },
+	{ "type": "ValidationTextBox", "name": "Muell5Termine", "caption": "Termine Müll5" },
+	{ "type": "CheckBox", "name": "Muell5Benachrichtigung", "caption": "Benachrichtigung für Müll5 aktiv" },
+	{ "type": "ValidationTextBox", "name": "Muell6Name", "caption": "Name Müll6" },
+	{ "type": "ValidationTextBox", "name": "Muell6Art", "caption": "Art Müll6" },
+	{ "type": "ValidationTextBox", "name": "Muell6Termine", "caption": "Termine Müll6" },
+	{ "type": "CheckBox", "name": "Muell6Benachrichtigung", "caption": "Benachrichtigung für Müll6 aktiv" },
+	{ "type": "Label", "label": "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" },
+	{ "type": "CheckBox", "name": "VergangeneTermineLoeschenCB", "caption": "Vergangene Leerungs-Termine automatisch entfernen" },
+    { "type": "Label", "label": "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" },
+	{ "type": "Label", "label": "Hier könnt ihr die Uhrzeiten für die Benachrichtigungen definieren (Format > Stunde:Minute):" },
+	{ "type": "ValidationTextBox", "name": "UhrzeitBenachrHeute1", "caption": "Leerung Heute 1" },
+	{ "type": "ValidationTextBox", "name": "UhrzeitBenachrHeute2", "caption": "Leerung Heute 2" },
+	{ "type": "ValidationTextBox", "name": "UhrzeitBenachrMorgen1", "caption": "Leerung Morgen 1" },
+	{ "type": "ValidationTextBox", "name": "UhrzeitBenachrMorgen2", "caption": "Leerung Morgen 2" },
+    { "type": "Label", "label": "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" },
+    { "type": "Label", "label": "Text der als Benachrichtigung gesendet wird (es stehen verschiedene Variablen zur Verfügung). Wird nichts aktiviert, findet keine" },
+    { "type": "Label", "label": "Benachrichtigung statt! Gibt es gleichzeitig mehrere Müllarten die am nächsten Tag geleert werden, wird für jede Müllart eine extra Benachrichtigung gesendet." },
+    { "type": "Label", "label": "Die folgenden Variablen stehen euch in Texten zur Verfügung: §MUELLNAME, §MUELLART, §MUELLDATUM, §MUELLTAG, §MUELLINTAGEN  (Erklärung in der ReadMe)" },
+    { "type": "CheckBox", "name": "MuellBenachrichtigungCBOX", "caption": "Müllleerungs-Benachrichtung senden (Allgemeine de/aktivierung)" },
+    { "type": "ValidationTextBox", "name": "MuellBenachrichtigungTEXTheute", "caption": "Benachr. Text (heute)" },
+	{ "type": "ValidationTextBox", "name": "MuellBenachrichtigungTEXTmorgen", "caption": "Benachr. Text (morgen)" },
+	{ "type": "Label", "label": "Hier kann ein Benachrichtigungs-Text für die Funktion 'BenachrichtigungInTagen' definiert werden:" },
+	{ "type": "ValidationTextBox", "name": "MuellBenachrichtigungTEXTinTagen", "caption": "Benachr. Text (in Tagen)" },
+	{ "type": "Label", "label": "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" },
+    { "type": "Label", "label": "Hier kann eine Boolean-Variable ausgewählt werden (nur wenn diese TRUE ist, findet eine Benachrichtigung statt):" },
+    { "type": "SelectVariable", "name": "BenachrichtigungsVar", "caption": "Bool-Variable" },
+    { "type": "Label", "label": "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" },
+    { "type": "Label", "label": "WebFront-Instanz, welche für den Versand der Push-Nachrichten verwendet wird (gültige IPS-Subscription notwendig):" },
+    { "type": "SelectInstance", "name": "WebFrontInstanceID", "caption": "WebFront-Instanz" },
+    { "type": "CheckBox", "name": "PushMsgAktiv", "caption": "Push-Benachrichtigung" },
+    { "type": "Label", "label": "SMTP-Instanz, welche für den Versand der EMail-Nachrichten verwendet wird:" },
+    { "type": "SelectInstance", "name": "SmtpInstanceID", "caption": "SMTP-Instanz" },
+    { "type": "CheckBox", "name": "EMailMsgAktiv", "caption": "EMail-Benachrichtigung" },
+    { "type": "Label", "label": "Skript für eigene Benachrichtigungs-Aktion (Sonos, Enigma2-Nachricht, LED blinken, SMS, ...):" },
+    { "type": "SelectScript", "name": "EigenesSkriptID", "caption": "Skript" },
+    { "type": "CheckBox", "name": "EigenesSkriptAktiv", "caption": "Eigenes Skript" },
+	{ "type": "Label", "label": "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" },
+    { "type": "Label", "label": "ICS-Import für Mülltermine (Automatische Zuordnung nach Name/Art)" },
+    { "type": "File", "name": "IcsUploadFile", "caption": "ICS-Datei auswählen" },
+    { "type": "Button", "label": "Termine aus ICS importieren", "onClick": "MUELL_ImportIcsTermine($id, $IcsUploadFile);" },
+	{ "type": "Label", "label": "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" },
+    { "type": "Label", "label": "Vorgeschlagene Müllnamen aus letztem ICS-Import:" },
+    {
+        "type": "script",
+        "script": "
+            // Diese Funktion wird benötigt, um die Daten der Müll-Namen/Arten auszulesen
+            // und sie den Select-Optionen dynamisch hinzuzufügen.
+            function getMuellOptions(instanceId) {
+                var options = [{'label': 'Bitte auswählen', 'value': 0}];
+                for (var j = 1; j <= 6; j++) {
+                    var muellNameProp = IPS_GetProperty(instanceId, 'Muell' + j + 'Name');
+                    var muellArtProp = IPS_GetProperty(instanceId, 'Muell' + j + 'Art');
+                    
+                    var labelText = 'Müll ' + j + ' (Name: ' + (muellNameProp ? muellNameProp : 'Leer') + ' / Art: ' + (muellArtProp ? muellArtProp : 'Leer') + ')';
+                    options.push({ 'label': labelText, 'value': j });
+                }
+                return options;
+            }
+
+
+            var instanceId = IPS_GetFormId(); // Holt die ID der aktuellen Instanz
+            var unrecognizedSummariesJson = IPS_RequestAction(instanceId, 'GetUnrecognizedIcsSummaries', '');
+            var unrecognizedSummaries = [];
+            try {
+                unrecognizedSummaries = JSON.parse(unrecognizedSummariesJson);
+            } catch (e) {
+                // Fehler beim Parsen, wahrscheinlich leeres oder ungültiges JSON
+                console.error('Fehler beim Parsen der unbekannten Summaries:', e);
+            }
+
+            var elements = [];
+            if (!unrecognizedSummaries || unrecognizedSummaries.length === 0) {
+                elements.push({ 'type': 'Label', 'label': 'Keine unbekannten Müllnamen gefunden oder alle Vorschläge übernommen.' });
+            } else {
+                for (var i = 0; i < unrecognizedSummaries.length; i++) {
+                    var summary = unrecognizedSummaries[i];
+                    var uniqueSelectName = 'assignMuell_' + i; // Eindeutiger Name für jedes Select-Feld
+
+                    elements.push({
+                        'type': 'RowLayout',
+                        'elements': [
+                            { 'type': 'Label', 'label': 'Vorschlag: ' + summary, 'width': 'auto' },
+                            {
+                                'type': 'Select',
+                                'name': uniqueSelectName,
+                                'caption': 'Zuweisen zu',
+                                'options': getMuellOptions(instanceId), // Dynamisch die Müll-Optionen holen
+                                'width': 'auto'
+                            },
+                            {
+                                'type': 'Button',
+                                'label': 'Übernehmen',
+                                'onClick': '
+                                    var targetMuellNr = this.parent.elements[1].value; // Nimmt den Wert des Select-Feldes in dieser Zeile
+                                    if (targetMuellNr && targetMuellNr > 0) {
+                                        IPS_RequestAction(instanceId, \'AdoptUnrecognizedIcsSummary\', JSON.stringify({ \"summary\": \"' + summary + '\", \"targetMuellNr\": targetMuellNr }));
+                                        // Optional: Formular nach Aktion neu laden, um Änderungen anzuzeigen
+                                        IPS_ReloadForm(); 
+                                    } else {
+                                        alert(\'Bitte wählen Sie eine gültige Müllsorte aus!\');
+                                    }
+                                ',
+                                'width': 'auto'
+                            }
+                        ]
+                    });
+                }
+            }
+            return JSON.stringify(elements);
+        "
+    }
+	
+  ],
+  "actions":
+  [
+
+    { "type": "Button", "label": "Test-Benachrichtigung senden", "onClick": "MUELL_BenachrichtigungsTest($id);" }
+
+  ],
+  "status":
+    [
+        { "code": 101, "icon": "active", "caption": "Müllabfuhr-Modul wird erstellt..." },
+        { "code": 102, "icon": "active", "caption": "Müllabfuhr-Modul ist aktiv" },
+        { "code": 201, "icon": "error", "caption": "FEHLER - Für Push Nachrichten muss eine WebFront-Instanz ausgewählt werden!" },
+        { "code": 202, "icon": "error", "caption": "FEHLER - Für EMail Nachrichten muss eine EMail-Instanz ausgewählt werden!" },
+        { "code": 203, "icon": "error", "caption": "FEHLER - Für eine eigene Aktion muss ein Skript ausgewählt werden!" },
+        { "code": 204, "icon": "error", "caption": "ACHTUNG - Damit eine Benachrichtigung erfolgen kann, muss eine Benachrichtigungs-Methode ausgewählt werden!" },
+		{ "code": 205, "icon": "error", "caption": "FEHLER - Es wurde ein ungültiges Datum eingetragen, bitte prüfen! Korrektes Datumsformat = TT.MM.JJJJ" },
+		{ "code": 221, "icon": "error", "caption": "FEHLER - Bitte die Felder 'Name' und 'Art' bei Müll1 ausfüllen, oder das Termine-Feld bei Müll1 leeren!" },
+		{ "code": 222, "icon": "error", "caption": "FEHLER - Bitte die Felder 'Name' und 'Art' bei Müll2 ausfüllen, oder das Termine-Feld bei Müll2 leeren!" },
+		{ "code": 223, "icon": "error", "caption": "FEHLER - Bitte die Felder 'Name' und 'Art' bei Müll3 ausfüllen, oder das Termine-Feld bei Müll3 leeren!" },
+		{ "code": 224, "icon": "error", "caption": "FEHLER - Bitte die Felder 'Name' und 'Art' bei Müll4 ausfüllen, oder das Termine-Feld bei Müll4 leeren!" },
+		{ "code": 225, "icon": "error", "caption": "FEHLER - Bitte die Felder 'Name' und 'Art' bei Müll5 ausfüllen, oder das Termine-Feld bei Müll5 leeren!" },
+		{ "code": 226, "icon": "error", "caption": "FEHLER - Bitte die Felder 'Name' und 'Art' bei Müll6 ausfüllen, oder das Termine-Feld bei Müll6 leeren!" }
+    ]
+}
