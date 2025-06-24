@@ -7,7 +7,7 @@
     "build": 0,
     "buildStrict": false,
     "compatibility": {
-        "kernel": "5.0"
+        "kernel": "7.0"
     },
     "bindings": [],
     "targets": []
